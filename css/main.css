@@ -544,6 +544,127 @@ color: #474747;
 line-height: 1.6;
 max-width: 300px;
 }
-.bo time{
+
+
+@media (max-width: 767px) {
+    .boxs .container {
+        display:flex;
+        flex-direction: column;
+    }
+    .bo {
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .bo h2 {
+        font-size: 22px;
+    }
+}
+.footer {
+padding-top: 50px;
+padding-bottom: 50px;
+background-color: var(--secondery-color);
+color: #ffffff;
+}
+.footer .container {
+display: grid;
+grid-template-columns: repeat(4,minmax(200px,1fr));
+gap: 0 40px;
+}
+.footer h5 {
+    font-size: 18px;
+    font-weight: normal;
+}
+.footer p {
+    line-height: 1.5;
+}
+.footer a {
+    color: var(--main-color);
+    font-size: 15px;
+}
+.footer i{
+    font-size: 16px;
+    padding: 7px;
+    background-color: #337f95;
+    margin-right: 7px;
+    transition: .3s;
+    margin-top: 23px;
+}
+.footer i:hover {
+    background-color: #0AC6FC;
+}
+.foot .foo p {
+position: relative;
+}
+.foot .foo p::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    height: 0.3px;
+    width: 120px;
+    background-color: #a2d9e9;
+    width: 220px;
+    left: 0vmax;
+}
+.footer input[type="text"],
+.footer input[type="email"] {
+    overflow: visible;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #7ecfe7;
+    transition: .3s;
+}
+.footer input[type="text"]:hover,
+.footer input[type="email"]:hover {
+    background-color: #e2f2f7;
+}
+input[type="submit"] {
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: var(--main-color);
 
 }
+input[type="submit"]:hover {
+    background-color: #e2f2f7;
+
+}
+.foot time {
+    font-size: 12px;
+}
+@media (max-width: 991px) {
+    .footer .container {
+        display: grid;
+        grid-template-columns: repeat(2,minmax(200px,1fr));
+        gap: 0 40px;
+        }
+        .foot {
+            margin-bottom: 50px;
+        }
+}
+@media (max-width: 767px) {
+    .footer .container {
+       display: flex;
+       flex-direction: column;
+      
+        }
+    }
+    .last {
+        padding: 25px 0;
+        background-color: #24a5c9;
+        color: #ffffff;
+    }
+    .last .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    @media (max-width: 767px) {  
+        .last .container {
+            display: flex;
+            flex-direction: column;
+            font-size: 15px;
+        }
+    }
